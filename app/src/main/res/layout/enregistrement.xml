@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.authentification.RegisteringActivity"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    >
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/enregistrement_layout"
+        />
+
+   <LinearLayout
+       android:id="@+id/enregistrement_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_margin="30dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.5"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/img_logo">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_enregistrement"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/enregistrementNom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Nom"
+        android:inputType="text"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/rounded_white_button"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <EditText
+        android:id="@+id/enregistrementPrénom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Prénom"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:background="@drawable/rounded_white_button"
+        android:drawablePadding="20dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="text"
+
+        />
+
+    <EditText
+        android:id="@+id/enregistrementEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="E-mail"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_white_button"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/email"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <EditText
+        android:id="@+id/enregistrementPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Mot de passe"
+        android:imeActionId="6"
+        android:imeOptions="actionUnspecified"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:drawablePadding="20dp"
+        android:singleLine="true"
+        android:background="@drawable/rounded_white_button"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/password"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <Button
+        android:id="@+id/création"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_creme_button"
+        android:text="@string/bt_creation"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enregistrement1"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/creme"/>
+
+    <TextView
+        android:id="@+id/seConncecter"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:text="@string/enregistrement2"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+
+   </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

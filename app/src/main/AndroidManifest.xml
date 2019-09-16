@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projet.uqam.mobileproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Views.objectifs.AddObjectiveActivity"
+            android:label="@string/title_activity_ajouter_objectifs"
+            android:theme="@style/creme"
+            android:parentActivityName=".Views.transactions.MainActivity"
+            >
+        </activity>
+        <activity
+            android:name=".Views.transactions.DetailDepance"
+            android:label="Detail depance"
+            android:theme="@style/creme"
+            android:parentActivityName=".Views.transactions.MainActivity"
+            >
+        </activity>
+        <activity
+            android:name=".Views.evenements.AddEventActivity"
+            android:label="@string/title_activity_ajouter_evenement"
+            android:theme="@style/creme"
+            android:parentActivityName=".Views.transactions.MainActivity"
+            />
+        <activity
+            android:name=".Views.transactions.AddIncomeActivity"
+            android:label="@string/title_activity_ajouter_recette"
+            android:theme="@style/recette"
+            android:parentActivityName=".Views.transactions.MainActivity"
+            />
+        <activity
+            android:name=".Views.transactions.AddSpentActivity"
+            android:label="@string/title_activity_ajouter_transaction"
+            android:parentActivityName=".Views.transactions.MainActivity"
+            android:theme="@style/depance" />
+        <activity
+            android:name=".Views.transactions.MainActivity"
+            android:label="Tableau de bord"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Views.authentification.RegisteringActivity"
+            android:label="@string/title_activity_enregistrement"
+            android:parentActivityName=".Views.authentification.LogInActivity"
+            android:theme="@style/creme" />
+        <activity
+            android:name=".Views.authentification.LogInActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.objectifs.AddObjectiveActivity"
+    >
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ajouter un objectif"
+        android:textColor="@color/bleu"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/salaire_bt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/voiture" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="80dp"
+        android:text="Nouvelle\nmaison"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="80dp"
+        android:text="Formation"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="80dp"
+        android:text="Cadeau"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:layout_marginLeft="80dp"
+        android:text="Autre"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Nouveau\nvéhicule "
+        android:layout_marginLeft="80dp"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/textView5" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="80dp"
+        android:text="Voyage de\nvacances"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/depot_bt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/house"
+        />
+
+    <Button
+        android:id="@+id/reunion_bt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/voyage"
+        />
+
+    <Button
+        android:id="@+id/renion_bt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/formation"
+        />
+
+    <Button
+        android:id="@+id/renin_bt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/cadeau"
+        />
+    <Button
+        android:id="@+id/renn_bt"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="395dp"
+        android:background="@drawable/settings"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/icone_objectifs_gb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/nv_voiture_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/nv_maison_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            />
+        <RadioButton
+            android:id="@+id/voyage_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            />
+        <RadioButton
+            android:id="@+id/formation_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            />
+
+        <RadioButton
+            android:id="@+id/cadeau_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            />
+        <RadioButton
+            android:id="@+id/autre_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <Button
+            android:id="@+id/annuler_objectif_icon_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:background="@drawable/rounded_blue_button"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/appliquer_objectif_icon_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appliquer"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded_blue_button"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+

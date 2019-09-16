@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.transactions.AddIncomeActivity"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="700dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/valeur_initiale"
+        android:textColor="@color/bleu"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/add_valeur-initiale_recette_portfeuille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:hint="@string/_0_tnd"
+        android:textColor="@color/gris"
+        android:inputType="number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bleu"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/objectif_price_currency"
+        android:layout_marginTop="110dp"/>
+    <Spinner
+        android:id="@+id/dv_recette"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:padding="8dp">
+    </Spinner>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/ajouter_une_cath_gorie"
+            android:textColor="@color/bleu"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+
+            android:id="@+id/salaire_bt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/salaire" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="80dp"
+            android:text="@string/d_p_t"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="360dp"
+            android:layout_marginLeft="80dp"
+            android:text="Autre"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:text="@string/salaire"
+            android:layout_marginLeft="80dp"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            android:id="@+id/textView5" />
+
+
+
+        <Button
+            android:id="@+id/depot_bt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/depot"
+            />
+        <Button
+            android:id="@+id/autre_recette_bt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/settings"
+            />
+
+
+
+        <Button
+            android:id="@+id/button_add_recettte_portfeuille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_green_button"
+            android:text="@string/ajouter_recette"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="500dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/recette_portfeuille_gb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="180dp">
+
+            <RadioButton
+                android:id="@+id/salaire_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/depot_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="57dp"
+                />
+            <RadioButton
+                android:id="@+id/autre_recette_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="57dp"
+                />
+
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+

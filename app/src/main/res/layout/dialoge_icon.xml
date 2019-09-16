@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.evenements.AddEventActivity"
+    >
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_icon"
+        android:textColor="@color/bleu"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/salaire_bt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/aniversaire" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/mariage"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/anniversaire"
+        android:layout_marginLeft="80dp"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/textView5" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="80dp"
+        android:text="@string/reunion"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/depot_bt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/mariage"
+        />
+
+    <Button
+        android:id="@+id/reunion_bt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/reunion"
+        />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/icone_gb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="70dp">
+
+        <RadioButton
+            android:id="@+id/anniversaire_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/mariage_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            />
+        <RadioButton
+            android:id="@+id/reunion_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        >
+
+        <Button
+            android:id="@+id/annuler_icon_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:background="@drawable/rounded_blue_button"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/appliquer_icon_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appliquer"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rounded_blue_button"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+

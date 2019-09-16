@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.objectifs.ObjectiveFragments">
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_obj"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DA4836"
+            android:text="Liste des objectifs actifs"
+            fab:layout_constraintTop_toTopOf="parent"
+            fab:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/objectif_vide"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="La liste des objectifs est vide"
+        android:textColor="#DA4836"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        fab:layout_constraintTop_toBottomOf="@id/txt_obj"
+        fab:layout_constraintStart_toStartOf="@id/txt_obj"
+        fab:layout_constraintEnd_toEndOf="parent"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+    <ScrollView
+        android:layout_marginTop="40dp"
+        android:id="@+id/scroll_v2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RV_objectif_actif"
+            android:layout_marginTop="10dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_objectifs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="75dp"
+        android:layout_marginLeft="10dp"
+        fab:menu_fab_size="normal"
+        fab:menu_showShadow="true"
+        fab:menu_shadowColor="#66000000"
+        fab:menu_shadowRadius="4dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="3dp"
+        fab:menu_colorNormal="#DA4836"
+        fab:menu_colorPressed="#E74"
+        fab:menu_colorRipple="#99FFFFFF"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_paddingTop="4dp"
+        fab:menu_labels_paddingRight="8dp"
+        fab:menu_labels_paddingBottom="4dp"
+        fab:menu_labels_paddingLeft="8dp"
+        fab:menu_labels_padding="8dp"
+        fab:menu_labels_textColor="#FFFFFF"
+        fab:menu_labels_textSize="14sp"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_colorNormal="#333333"
+        fab:menu_labels_colorPressed="#444444"
+        fab:menu_labels_colorRipple="#66FFFFFF"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_maxLines="-1"
+        android:layout_gravity="bottom|right"
+        fab:menu_labels_position="left"
+        fab:menu_openDirection="up"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_fab_label=""
+        fab:menu_fab_show_animation="@anim/show_from_bottom"
+        fab:menu_fab_hide_animation="@anim/hide_to_bottom"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintEnd_toEndOf="parent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_objectifs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/creme"
+            fab:fab_label="Ajouter un objectif" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</android.support.constraint.ConstraintLayout>

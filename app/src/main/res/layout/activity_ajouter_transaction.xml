@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Views.transactions.AddSpentActivity"
+    >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:text="@string/valeur_initiale"
+            android:textColor="@color/bleu"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <AutoCompleteTextView
+            android:id="@+id/add_valeur-initiale_depense_portfeuille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:hint="@string/_0_tnd"
+            android:textColor="@color/gris"
+            android:inputType="number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/devise"
+            android:textColor="@color/bleu"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="90dp"/>
+        <Spinner
+            android:id="@+id/dv_depense"
+            android:layout_width="80dp"
+            android:padding="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="120dp" >
+        </Spinner>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="@string/ajouter_une_cath_gorie"
+                android:textColor="@color/bleu"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+
+                android:id="@+id/maison_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/house"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="80dp"
+                android:text="@string/sant"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maison"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="80dp"
+                android:text="@string/r_staurants"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp"
+                android:layout_marginLeft="80dp"
+                android:text="@string/transports"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/communication"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/v_tements"
+                android:layout_marginTop="580dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autre"
+                android:layout_marginTop="660dp"
+                android:layout_marginLeft="80dp"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+            <RadioGroup
+
+                android:id="@+id/RG_add_depense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="220dp">
+                <RadioButton
+                    android:id="@+id/maison_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/maison_bt" />
+
+                <RadioButton
+                    android:id="@+id/santé_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp" />
+
+                <RadioButton
+                    android:id="@+id/restaurant_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/transports_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/communication_rb"
+                    android:layout_marginTop="50dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vetement_rb"
+                    android:layout_marginTop="45dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/autre_rb"
+                    android:layout_marginTop="45dp"/>
+
+
+            </RadioGroup>
+            <Button
+                android:id="@+id/santé_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="220dp"
+                android:background="@drawable/doctor"
+                />
+
+
+            <Button
+                android:id="@+id/restaurant_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="310dp"
+                android:background="@drawable/restaurant"/>
+
+            <Button
+                android:id="@+id/transports_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/voiture"
+                />
+
+            <Button
+                android:id="@+id/communication_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="480dp"
+                android:background="@drawable/communication"
+                />
+
+            <Button
+                android:id="@+id/vêtements_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="560dp"
+                android:background="@drawable/vetement"
+                />
+            <Button
+                android:id="@+id/autre_bt"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="640dp"
+                android:background="@drawable/settings"
+                />
+            <Button
+                android:id="@+id/button_add_depense_portfeuille"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_red_bouton"
+                android:text="@string/ajouter_d_pense"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="720dp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
+
+
